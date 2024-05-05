@@ -1,9 +1,8 @@
 import React from 'react';
 import toast from 'react-hot-toast';
 
-import Button from '@components/elements/Button';
-
 import { Master } from '@components/layouts/Master';
+import { Welcome } from '@components/fragments/Welcome';
 
 export const HomePage = () => {
 	const letsGo = (e) => {
@@ -24,14 +23,7 @@ export const HomePage = () => {
 	return (
 		<>
 			<Master>
-				<div className='flex-col bg-slate-200 p-6 rounded-md'>
-					<h1>Welcome, Viery!</h1>
-					<Button
-						type='bg-red-700'
-						event={letsGo}>
-						<i className='fa fa-rocket'></i> Let's Go!
-					</Button>
-				</div>
+				<Welcome event={letsGo} />
 			</Master>
 		</>
 	);

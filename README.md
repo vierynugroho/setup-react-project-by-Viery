@@ -5,6 +5,7 @@
 3. import aliases
 4. atomic design
 5. tailwindCSS
+6. react-router-dom
 
 # How to Explore?
 
