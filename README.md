@@ -54,17 +54,17 @@
    import { dirname } from 'path';
    import { fileURLToPath } from 'url';
 
-   const **filename = fileURLToPath(import.meta.url);
-   const **dirname = dirname(\_\_filename);
+   const __filename = fileURLToPath(import.meta.url);
+   const __dirname = dirname(\_\_filename);
 
    export default defineConfig({
-   plugins: [react()],
-   resolve: {
-   alias: {
-   		'@components': path.resolve(**dirname, 'src/components/'),
-   		'@pages': path.resolve(**dirname, 'src/pages/'),
-   },
-   },
+      plugins: [react()],
+      resolve: {
+         alias: {
+      		'@components': path.resolve(__dirname, 'src/components/'),
+      		'@pages': path.resolve(__dirname, 'src/pages/'),
+         },
+      },
    });
 
    ```
